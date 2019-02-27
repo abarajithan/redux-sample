@@ -4,10 +4,11 @@ import store from '../store/store';
 import Container from "./Container";
 import ExternalAccessofStore from '../component/ExternalAccessofStore';
 import BindActionCreatorComponent from '../component/BindActionCreatorComponent';
+
 class App extends Component {
     render() {
         return (
-            <div>
+            <div className='container m-t-10'>
                 <Provider store={store}>
                     <Container />
                     <BindActionCreatorComponent />

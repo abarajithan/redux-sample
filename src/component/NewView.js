@@ -6,7 +6,7 @@ class NewView extends Component {
         console.log("Props from New  View",this.props);
         return (
             <div>
-                <Button variant='contained' color="primary" onClick={() => this.props.increase(1)}>Increase without Redux</Button>
+                <Button style={{marginTop: 30}}  variant='contained' color="primary" onClick={() => this.props.increase(1)}>Increase without Redux</Button>
             </div>
         );
     }

@@ -11,19 +11,21 @@ class Container extends Component {
     render() {
         console.log(this.props);
         return (
-            <div>
-                <div>
+            <div className='row'>
+                <div className='col-6'>
                     {this.props.counter.increment.counter}
                 </div>
-                <Button onClick={this.props.increment} style={{marginRight: 30}} variant="contained" color="secondary" >
-                    Increment
-                </Button>
-                <Button onClick={this.props.decrement}  style={{marginRight: 30}}  variant="contained"  color="secondary" >
-                    Decrement
-                </Button>
-                <Button onClick={this.props.reset} variant="contained" color="secondary" >
-                    Reset
-                </Button>
+                <div className='col-6'>
+                    <Button onClick={this.props.increment} style={{marginRight: 30}} variant="contained" color="secondary" >
+                        Increment
+                    </Button>
+                    <Button onClick={this.props.decrement}  style={{marginRight: 30}}  variant="contained"  color="secondary" >
+                        Decrement
+                    </Button>
+                    <Button onClick={this.props.reset} variant="contained" color="secondary" >
+                        Reset
+                    </Button>
+                </div>
             </div>
         );
     }

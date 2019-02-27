@@ -24,7 +24,7 @@ class ExternalAccessofStore extends Component {
             }}>
                 Access Store Externally: {state.increment.counter}
                 <br/>
-                <Button onClick={this.refresh}>Refresh</Button>
+                <Button style={{marginTop: 30}} variant='contained' color='primary' onClick={this.refresh}>Refresh</Button>
             </div>
         );
     }
